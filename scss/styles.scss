@@ -1,0 +1,74 @@
+@import "fonts";
+@import "reset";
+
+// переменные
+$grey-color: #ced5dd;
+$red-color: #ee3124;
+$hover-color: #b20000;
+$black-color: #24252e;
+
+html {
+  font-family: "Montserrat Alternates", "Tahoma", sans-serif;
+  font-size: 10px;
+  color: $black-color;
+}
+// .btn {
+//     font-size: 1.6rem;
+//     font-weight: 500;
+//     border-radius: 5rem;
+//     line-height: 1.95rem;
+//     padding: 16px 32px;
+//     cursor: pointer;
+//     &:active {
+//       scale: 0.9;
+//     }
+// }
+
+%btn {
+  width: 225px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 5rem;
+  line-height: 1.95rem;
+  padding: 16px 32px;
+  cursor: pointer;
+  &:active {
+    scale: 0.9;
+  }
+}
+.btn_theme_primary {
+  color: white;
+  border: 1px solid $red-color;
+  background-color: $red-color;
+  @extend %btn;
+
+  &:hover {
+    border: 1px solid $hover-color;
+    background-color: $hover-color;
+  }
+  &:disabled {
+    border: 1px solid $grey-color;
+    background-color: $grey-color;
+  }
+}
+
+//secondary
+
+.btn_theme_secondary {
+  color: $black-color;
+  border: 1px solid $red-color;
+  background-color: white;
+  @extend %btn;
+  &:hover {
+    color: $black-color;
+    border: 1px solid $hover-color;
+    background-color: white;
+  }
+  &:disabled {
+    color: $black-color;
+    border: 1px solid $grey-color;
+    background-color: white;
+  }
+}

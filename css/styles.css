@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-display: swap;
+  src: url("/assets/fonts/MontserratAlternates-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: "Montserrat Alternates", "Tahoma", sans-serif;
+  font-size: 10px;
+  color: #24252e;
+}
+
+.btn_theme_secondary, .btn_theme_primary {
+  width: 225px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 5rem;
+  line-height: 1.95rem;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+.btn_theme_secondary:active, .btn_theme_primary:active {
+  scale: 0.9;
+}
+
+.btn_theme_primary {
+  color: white;
+  border: 1px solid #ee3124;
+  background-color: #ee3124;
+}
+.btn_theme_primary:hover {
+  border: 1px solid #b20000;
+  background-color: #b20000;
+}
+.btn_theme_primary:disabled {
+  border: 1px solid #ced5dd;
+  background-color: #ced5dd;
+}
+
+.btn_theme_secondary {
+  color: #24252e;
+  border: 1px solid #ee3124;
+  background-color: white;
+}
+.btn_theme_secondary:hover {
+  color: #24252e;
+  border: 1px solid #b20000;
+  background-color: white;
+}
+.btn_theme_secondary:disabled {
+  color: #24252e;
+  border: 1px solid #ced5dd;
+  background-color: white;
+}/*# sourceMappingURL=styles.css.map */
